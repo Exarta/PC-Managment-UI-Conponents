@@ -10,7 +10,7 @@
   <body>
     <div class="w-full">
       <div class="flex flex-col items-center">
-        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8 w-[70%]">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8 w-[70%] mb-4">
           <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
             <div class="bg-gray-300 w-fit p-4 rounded-full cursor-pointer my-8">
               ADD NEW USER
@@ -76,6 +76,149 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+        </div>
+        <div class="w-full bg-gray-50 dark:bg-gray-900">
+          <div
+            class="flex flex-col items-center justify-center px-6 mx-auto lg:py-0"
+          >
+            <div
+              class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700"
+            >
+              <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                <h1
+                  class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white text-center"
+                >
+                  Sign in to your account
+                </h1>
+                <form class="space-y-4 md:space-y-6" action="#">
+                  <div>
+                    <input
+                      type="name"
+                      name="name"
+                      id="name"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="Enter your Name "
+                      required=""
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      placeholder="name@.com"
+                      required=""
+                    />
+                  </div>
+                  <div class="inline-block w-full relative">
+                    <select
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block appearance-none w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+                    >
+                      <option>PC List Here</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    <div
+                      class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                    >
+                      <svg
+                        class="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="inline-block w-full relative">
+                    <select
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block appearance-none w-full dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
+                    >
+                      <option>Team Here</option>
+                      <option>Hussain</option>
+                      <option>Hunain</option>
+                      <option>Maheen</option>
+                      <option>Zulqarnain</option>
+                    </select>
+                    <div
+                      class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                    >
+                      <svg
+                        class="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      for="password"
+                      class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="••••••••"
+                      class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                      required=""
+                    />
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-start">
+                      <div class="flex items-center h-5">
+                        <input
+                          id="remember"
+                          aria-describedby="remember"
+                          type="checkbox"
+                          class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                          required=""
+                        />
+                      </div>
+                      <div class="ml-3 text-sm">
+                        <label
+                          for="remember"
+                          class="text-gray-500 dark:text-gray-300"
+                          >Remember me</label
+                        >
+                      </div>
+                    </div>
+                    <a
+                      href="#"
+                      class="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
+                      >Forgot password?</a
+                    >
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center bg-blue-500"
+                  >
+                    Sign in
+                  </button>
+                  <p
+                    class="text-sm font-light text-gray-500 dark:text-gray-400"
+                  >
+                    Don’t have an account yet?
+                    <a
+                      href="/signUp.html"
+                      class="font-medium text-primary-600 hover:underline dark:text-primary-500"
+                      >Sign up</a
+                    >
+                  </p>
+                </form>
+              </div>
             </div>
           </div>
         </div>
